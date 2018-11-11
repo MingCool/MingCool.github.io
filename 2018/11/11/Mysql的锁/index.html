@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Hexo</title>
+  <title>MySQL的锁 | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -178,11 +178,12 @@
       </time>
     
 </span>
-                <h1></h1>
+                <h1>MySQL的锁</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h2 id="为什么要加锁"><a href="#为什么要加锁" class="headerlink" title="为什么要加锁"></a>为什么要加锁</h2><p>保证对共享资源的并发访问</p>
+      		<p>本文主要对MySQL的锁进行大致讲解。</p>
+<h2 id="为什么要加锁"><a href="#为什么要加锁" class="headerlink" title="为什么要加锁"></a>为什么要加锁</h2><p>保证对共享资源的并发访问</p>
 <h2 id="InnoDB锁类型的概述"><a href="#InnoDB锁类型的概述" class="headerlink" title="InnoDB锁类型的概述"></a>InnoDB锁类型的概述</h2><p><img src="https://i.imgur.com/l5oU1ua.png" alt=""></p>
 <ul>
 <li>乐观锁和悲观锁是两种并发控制的思想，可用于解决丢失更新的问题。乐观锁会乐观的假定不会发生并发冲突，访问和处理过程不加锁，只是在更新数据时再根据版本号来判断是否有冲突，有则处理无则提交事务。</li>

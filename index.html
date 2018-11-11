@@ -205,7 +205,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2018/11/11/Mysql的锁/"></a></h3>
+                    <h3><a href="/2018/11/11/Mysql的锁/">MySQL的锁</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2018-11-11T08:13:12.944Z" itemprop="datePublished">
@@ -218,13 +218,14 @@
                 <div class="col-md-8">
                     <p>
                       
-                        为什么要加锁保证对共享资源的并发访问
+                        本文主要对MySQL的锁进行大致讲解。
+为什么要加锁保证对共享资源的并发访问
 InnoDB锁类型的概述
 
 乐观锁和悲观锁是两种并发控制的思想，可用于解决丢失更新的问题。乐观锁会乐观的假定不会发生并发冲突，访问和处理过程不加锁，只是在更新数据时再根据版本号来判断是否有冲突，有则处理无则提交事务。
 InnoDB支持多种锁粒度，默认为行锁，锁粒度最小，锁冲突概率低，支持并发度高，但是开销大。
 共享锁和排他锁是InnoDB实现的两种标准行锁。
-InnoDB有三种锁算法，记录锁，gap
+
                       
                     </p>
                     
